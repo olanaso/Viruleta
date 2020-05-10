@@ -1,13 +1,56 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+
+.logo-ruleta{
+   height: 150px;
+ }
+
+.img-participantes{
+  height:30px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.user-img{
+  height:20px;
+}
+
+.map-sidebar-section-item {
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid transparent;
+    flex: none;
+    height: 35px !important;
+    align-items: center;
+    position: relative;
+}
+
+.map-sidebar-section-item-details {
+    width: 100% !important;
+    white-space: nowrap;
+    overflow: hidden;
+    flex: none;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 25px;
+}
+
+.margin-left{
+    margin-left: 250px;
+    
+}
+
+.section-highlights-box {
+   
+    width: 100% !important;
+  
+}
+
+.btnruleta{
+    cursor: pointer;
+}
+
+.img-felicitacione{
+    height: 120px;
 }
