@@ -8,7 +8,7 @@ const ModalFinish = ({numero=0}) => {
             <div className="share-modal backdrop">
                 <div className="share-modal-inner modal"><i className="share-modal-close feather feather-x" ></i>
                     <img className="img-felicitacione" src="felicitaciones.svg"/>
-                    <h3>Felicitaciones el ganador es: <i><h1>{numero} </h1></i></h3>
+                    <h3>Felicitaciones el ganador es: <i><h1 className="ganador">{numero} </h1></i></h3>
                     <div className="share-modal-list">
                        
                     </div>

@@ -33,6 +33,7 @@ const Ruleta = () => {
             'outerRadius'     : 300,        // Set outer radius so wheel fits inside the background.
             'innerRadius'     : 75,         // Make wheel hollow so segments dont go all way to center.
             'textFontSize'    : 50,         // Set default font size for the segments.
+            'responsive'   : true,
             // 'textOrientation' : 'vertical', // Make text vertial so goes down from the outside of wheel.
             'textAlignment'   : 'outer',    // Align text to outside of wheel.
             'numSegments'     : 15,         // Specify number of segments.
@@ -71,6 +72,7 @@ const Ruleta = () => {
             'pins' :                // Turn pins on.
                 {
                     'number'     : 15,
+                    'responsive' : true,
                     'fillStyle'  : 'silver',
                     'outerRadius': 4,
                 }
@@ -147,7 +149,11 @@ const Ruleta = () => {
     
     return (
         <>
-            <canvas id='ruleta' width='800' height='650'>
+            <canvas id='ruleta' width='800' height='650'
+                    data-responsiveMinWidth="180"
+                    data-responsiveScaleHeight="true"   /* Optional Parameters */
+                    data-responsiveMargin="50"
+            >
 
               
             </canvas>
