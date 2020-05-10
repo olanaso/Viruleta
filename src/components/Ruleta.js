@@ -59,7 +59,7 @@ const Ruleta = () => {
             'animation' :           // Specify the animation to use.
                 {
                     'type'     : 'spinToStop',
-                    'duration' : 30,
+                    'duration' : 45,
                     'spins'    : 10,
                     'callbackFinished' : 'alertPrize()',  // Function to call whent the spinning has stopped.
                  
@@ -121,14 +121,14 @@ const Ruleta = () => {
       
 
       
-         crearRuleta();
+       //  crearRuleta();
     }
 
 
     window.alertPrize=alertPrize;
 
     function DibujarTriangulo() {
-        distnaciaX = 210;
+        distnaciaX = 197;
         distnaciaY = -0;
         ctx = theWheel.ctx;
         ctx.strokeStyle = 'navy';
