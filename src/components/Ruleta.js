@@ -59,7 +59,7 @@ const Ruleta = () => {
             'animation' :           // Specify the animation to use.
                 {
                     'type'     : 'spinToStop',
-                    'duration' : 10,
+                    'duration' : 30,
                     'spins'    : 10,
                     'callbackFinished' : 'alertPrize()',  // Function to call whent the spinning has stopped.
                  

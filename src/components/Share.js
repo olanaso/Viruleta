@@ -4,8 +4,10 @@ const Share = () => {
     return (
         <  >
         <div class="action-buttons">
-        <button class="action-buttons-share">Compartir</button>
-        <button class="action-buttons-donate"><img src="https://coronavirus.app/assets/img/coffee-buy.png" />Regálanos un cafecito!</button>
+            <a href="https://www.facebook.com/Viruleta-113424797029692/" target="_blank">
+        <button class="action-buttons-share">Facebook</button>
+            </a>
+       
     </div>
       
         < />

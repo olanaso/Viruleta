@@ -22,7 +22,7 @@ const Participante = () => {
         <div className="map-sidebar-section-item">
             <div className="map-sidebar-section-item-img"><img className="user-img" src="participante.svg"/></div>
             {
-                edicion ? <input onChange={cambiar} onFocus={deseditar} value={text}/> :
+                edicion ? <input onChange={cambiar} onBlur={deseditar} value={text}/> :
                     <div className="map-sidebar-section-item-details" onClick={editar}>
                         <div className="map-sidebar-section-item-title">{text}</div>
                         <div className="map-sidebar-section-item-desc"></div>
