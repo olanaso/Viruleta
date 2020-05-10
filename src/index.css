@@ -10,6 +10,7 @@
 
 .user-img{
   height:20px;
+    margin-left: 15px;
 }
 
 .map-sidebar-section-item {
@@ -19,11 +20,18 @@
     justify-content: space-between;
     border: 1px solid transparent;
     flex: none;
-    height: 35px !important;
+    height: 45px !important;
     align-items: center;
     position: relative;
+    margin-left: 10px !important;
 }
 
+.map-sidebar-section-item:before {
+  
+    font-size: 40px !important;
+    color: red;
+ 
+}
 .map-sidebar-section-item-details {
     width: 100% !important;
     white-space: nowrap;
@@ -53,4 +61,15 @@
 
 .img-felicitacione{
     height: 120px;
+}
+
+.ganador{
+    font-size: 50px !important;
+}
+
+.ruleta-container{
+    width:800px;
+    height:450px;
+    background: url("/bgruleta.png");
+    
 }
