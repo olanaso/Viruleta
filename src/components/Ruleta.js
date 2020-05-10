@@ -9,6 +9,7 @@ const {Winwheel}=window;
 
 const Ruleta = () => {
     const [mostrarGanador, setMostrarGanador] = useState(false);
+    const [girando, setGirando] = useState('GIRAR LA RULETA');
     const [numGanador, setnumGanador] = useState('0');
     var objRuleta;
     var winningSegment;
@@ -61,7 +62,7 @@ const Ruleta = () => {
                 {
                     'type'     : 'spinToStop',
                     'duration' : 45,
-                    'spins'    : 10,
+                    'spins'    : 45,
                     'callbackFinished' : 'alertPrize()',  // Function to call whent the spinning has stopped.
                  
                     'callbackAfter': 'DibujarTriangulo()',
@@ -81,8 +82,9 @@ const Ruleta = () => {
 
 //Funcionar la ruleta
     const girarRuleta=()=>{
-
         theWheel.startAnimation();
+
+    
         //DibujarTriangulo()
     }
 
@@ -98,6 +100,7 @@ const Ruleta = () => {
     function playSound()
     {
      console.log('sonido')
+      //  setGirando(true);
         audio.pause();
         audio.currentTime = 0;
 
@@ -118,8 +121,9 @@ const Ruleta = () => {
         winningSegment = theWheel.getIndicatedSegment();
 
 
-        setMostrarGanador(true) 
-        setnumGanador( winningSegment.text);
+        setMostrarGanador(true)
+        const demoId = document.getElementById(winningSegment.text);
+        setnumGanador( winningSegment.text+' : '+demoId.textContent);
       
 
       
@@ -143,6 +147,7 @@ const Ruleta = () => {
         ctx.lineTo(distnaciaX + 171, distnaciaY + 5);
         ctx.stroke();
         ctx.fill();
+     //   setGirando(true);
     }
     
     window.DibujarTriangulo=DibujarTriangulo;
@@ -161,14 +166,18 @@ const Ruleta = () => {
               
             </canvas>
             </div>
+           
+                
+                 <div className="section-container-highlights">
+                    <div className="section-highlights-box infected btnruleta" onClick={girarRuleta}>
 
-            <div className="section-container-highlights">
-                <div className="section-highlights-box infected btnruleta" onClick={girarRuleta}>
-                    <div className="section-el-number"><sub>+</sub>Girar</div>
-                    <div className="section-el-name">y que gane el suertudo</div>
+                        <div className="section-el-number">{girando}</div>
+                        <div className="section-el-name">y que gane el suertudo</div>
+                    </div>
+
                 </div>
-               
-            </div>
+          
+           
             
             {mostrarGanador ? <ModalFinish numero={numGanador} /> :null}
            

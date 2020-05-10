@@ -20,7 +20,7 @@
     justify-content: space-between;
     border: 1px solid transparent;
     flex: none;
-    height: 45px !important;
+    height: 35px !important;
     align-items: center;
     position: relative;
     margin-left: 10px !important;
@@ -28,7 +28,7 @@
 
 .map-sidebar-section-item:before {
   
-    font-size: 40px !important;
+    font-size: 25px !important;
     color: red;
  
 }
@@ -72,4 +72,10 @@
     height:450px;
     background: url("/bgruleta.png");
     
+}
+
+.share-modal-inner {
+   
+    width: 700px !important;
+   
 }

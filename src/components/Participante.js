@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 
-const Participante = () => {
+const Participante = ({id}) => {
     const [edicion, setEdicion] = useState(false);
     const [text, settext] = useState('NINGUNO');
     
@@ -24,13 +24,13 @@ const Participante = () => {
             {
                 edicion ? <input onChange={cambiar} onBlur={deseditar} value={text}/> :
                     <div className="map-sidebar-section-item-details" onClick={editar}>
-                        <div className="map-sidebar-section-item-title">{text}</div>
+                        <div id={id} className="map-sidebar-section-item-title">{text}</div>
                         <div className="map-sidebar-section-item-desc"></div>
                     </div>
             }
 
             <div className="map-sidebar-section-item-nb infected"></div>
-        </div>
+        </div> 
     )
         ;
 };
