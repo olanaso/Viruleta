@@ -8,6 +8,6 @@ https://olanaso.github.io/Viruleta/
 
 ## Implementacion
 
-react
-create-react-app
-redux
+- react
+- create-react-app
+- redux
