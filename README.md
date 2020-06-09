@@ -10,3 +10,4 @@ https://olanaso.github.io/Viruleta/
 
 react
 create-react-app
+redux
