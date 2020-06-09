@@ -1,17 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Header from './components/Header';
-import Container from './components/Container';
-import Share from './components/Share';
+import {Provider} from 'react-redux';
+import store from './store/index';
+import './index.css';
+import Viruleta from "./components/Viruleta/Viruleta";
 
 function App() {
   return (
-      <>
-      <Header/>    
-      <Container/>
-      <Share/>
-      </>
+      <Provider store={store}>
+        <Viruleta/>
+      </Provider>
   );
 }
 

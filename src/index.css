@@ -1,81 +1,125 @@
-
-
-.logo-ruleta{
-   height: 150px;
- }
-
-.img-participantes{
-  height:30px;
+body {
+    background-color: #f8f9fa;
 }
 
-.user-img{
-  height:20px;
-    margin-left: 15px;
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
-.map-sidebar-section-item {
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.container {
+    max-width: 960px;
+}
+
+.pricing-header {
+    max-width: 700px;
+}
+
+.card-deck .card {
+    min-width: 220px;
+}
+
+.participante {
     width: 100%;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid transparent;
-    flex: none;
-    height: 35px !important;
-    align-items: center;
-    position: relative;
-    margin-left: 10px !important;
+    height: 35px;
+    transition: all 0.2s ease-in-out;
 }
 
-.map-sidebar-section-item:before {
-  
-    font-size: 25px !important;
-    color: red;
- 
-}
-.map-sidebar-section-item-details {
-    width: 100% !important;
-    white-space: nowrap;
-    overflow: hidden;
-    flex: none;
-    justify-content: flex-start;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    min-height: 25px;
-}
-
-.margin-left{
+.participante:hover {
+    transform: scale(1.9) !important;
     margin-left: 250px;
-    
+    border-color: #007bff;
+    z-index: 3000;
+    height: 50px;
 }
 
-.section-highlights-box {
-   
-    width: 100% !important;
-  
+.ficha-participante {
+    height: 20px;
 }
 
-.btnruleta{
+.dinero {
+    font-size: 12px
+}
+
+.nomb-participante {
+    font-size: 12px !important;
+    font-weight: bold;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    min-width: 30px!important;
+}
+
+.content-name-participante {
+    height: 20px !important
+}
+
+.titulo-participantes {
+
+    margin-bottom: 3px;
+}
+
+.list-group-item {
+    padding: 0.0rem 1.25rem;
+}
+
+.numero-participante {
+    font-size: 30px !important;
+}
+
+.activatePago {
+    height: 35px;
+    float: right;
     cursor: pointer;
+
 }
 
-.img-felicitacione{
-    height: 120px;
+.activadodinero {
+    font-weight: bold;
+    color: #007bff;
+    font-size: 12px;
 }
 
-.ganador{
-    font-size: 50px !important;
+.nombre-participante {
+    height: 18px;
 }
 
-.ruleta-container{
-    width:800px;
-    height:450px;
-    background: url("/bgruleta.png");
-    
+.ganaste {
+    background: #FFFF64;
 }
 
-.share-modal-inner {
-   
-    width: 700px !important;
-   
+.perdiste {
+    background: red;
+}
+
+.mg-left {
+    padding: 1rem !important;
+    float: left;
+}
+
+#ruleta {
+    float: left !important;
+}
+
+.img-modal{
+    height: 250px !important;
 }
